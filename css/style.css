@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oswald:wght@200&display=swap');
+
+body {
+    background-color: bisque;
+}
+
+main {
+  width: 1160px;
+  margin: 20px auto;
+  border: 1px solid gray;
+  padding: 20px; 
+  background-color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+h1 {
+  color: white;
+  background-color: rgb(122, 53, 53);
+  text-align: center;
+  font-size: 60px;
+  padding: 20px;
+}
+h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+a {
+  color:aquamarine;
+  text-decoration: navajowhite;
+}
+
+a:hover {
+  background-color: blueviolet;
+  color: white;
+  }
+
+  table, th, td {
+    border: 1px solid rgb(133, 133, 133);
+  }
+
+  th {
+    background-color: #222;
+    color: #eee;
+  }
+
+  td, th {
+    padding: 5px 10px;
+  }
+
+  .text-italic {
+    font-style: italic;
+  }
+
+  .text-center {
+    text-align: center;
+    background-color: aquamarine;
+    }
+  
+
+  .bg-lojza {
+    background-color: rgb(189, 128, 54) !important;  
+    }
