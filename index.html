@@ -1,250 +1,268 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Programy a data</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/homepage.css">
-<style>
-body {
-  font-family:'Oswald', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Create a column layout with Flexbox */
-.row {
-  display: flex;
-}
-
-/* Left column (menu) */
-.left {
-  flex: 35%;
-  padding: 15px 0;
-}
-
-.left h2 {
-  padding-left: 8px;
-}
-
-/* Right column (page content) */
-.right {
-  flex: 65%;
-  padding: 15px;
-}
-
-/* Style the search box */
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid #ddd;
-}
-
-/* Style the navigation menu inside the left column */
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: rgb(141, 44, 141);
-  display: block
-}
-
-#myMenu li a:hover {
-  background-color: #eee;
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Oswald', sans-serif;
-}
-
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-nav {
-  float: left;
-  width: 20%;
-  height: 1500px;
-  background: #ccc;
-  padding: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-div.container {
-  text-align: center;
-}
-
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-}
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-}
-
-body {
-    background-color: bisque;
-}
-
-main {
-  width: 1160px;
-  margin: 20px auto;
-  border: 1px solid gray;
-  padding: 20px; 
-  background-color: white;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Oswald', sans-serif;
-}
-h1 {
-  color: white;
-  background-color: rgb(122, 53, 53);
-  text-align: center;
-  font-size: 60px;
-  padding: 20px;
-}
-h2 {
-  border-bottom: 1px solid black;
-  text-align: center;
-  font-size: 40px;
-  padding-bottom: 10px;
-}
-
-a {
-  color:rgb(141, 44, 141);
-  text-decoration: navajowhite;
-}
-
-a:hover {
-  background-color: blueviolet;
-  color: white;
-  }
-
-  table, th, td {
-    border: 1px solid rgb(133, 133, 133);
-  }
-
-  th {
-    background-color: #222;
-    color: #eee;
-  }
-
-  td, th {
-    padding: 5px 10px;
-  }
-
-  .text-italic {
-    font-style: italic;
-  }
-
-  .text-center {
-    text-align: center;
-    background-color: aquamarine;
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/homepage.css">
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
     }
-  
 
-  .bg-lojza {
-    background-color: rgb(189, 128, 54) !important;  
+    * {
+      box-sizing: border-box;
     }
+
+    /* Create a column layout with Flexbox */
+    .row {
+      display: flex;
+    }
+
+    /* Left column (menu) */
+    .left {
+      flex: 35%;
+      padding: 15px 0;
+    }
+
+    .left h2 {
+      padding-left: 8px;
+    }
+
+    /* Right column (page content) */
+    .right {
+      flex: 65%;
+      padding: 15px;
+    }
+
+    /* Style the search box */
+    #mySearch {
+      width: 100%;
+      font-size: 18px;
+      padding: 11px;
+      border: 1px solid #ddd;
+    }
+
+    /* Style the navigation menu inside the left column */
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #myMenu li a {
+      padding: 12px;
+      text-decoration: none;
+      color: rgb(141, 44, 141);
+      display: block
+    }
+
+    #myMenu li a:hover {
+      background-color: #eee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    nav {
+      float: left;
+      width: 20%;
+      height: 1500px;
+      background: #ccc;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    div.container {
+      text-align: center;
+    }
+
+    ul.myUL {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+    }
+
+    .flex-container>div {
+      background-color: #f1f1f1;
+      margin: 10px;
+    }
+
+    body {
+      background-color: bisque;
+    }
+
+    main {
+      width: 1160px;
+      margin: 20px auto;
+      border: 1px solid gray;
+      padding: 20px;
+      background-color: white;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    h1 {
+      color: white;
+      background-color: rgb(122, 53, 53);
+      text-align: center;
+      font-size: 60px;
+      padding: 20px;
+    }
+
+    h2 {
+      border-bottom: 1px solid black;
+      text-align: center;
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: rgb(141, 44, 141);
+      text-decoration: navajowhite;
+    }
+
+    a:hover {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid rgb(133, 133, 133);
+    }
+
+    th {
+      background-color: #222;
+      color: #eee;
+    }
+
+    td,
+    th {
+      padding: 5px 10px;
+    }
+
+    .text-italic {
+      font-style: italic;
+    }
+
+    .text-center {
+      text-align: center;
+      background-color: aquamarine;
+    }
+
+
+    .bg-lojza {
+      background-color: rgb(189, 128, 54) !important;
+    }
+
     img {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
-</style>
+  </style>
 </head>
+
 <body>
-    <header><h1><a href="index.html">Programy a Data</a></h1></header>
+  <header>
+    <h1><a href="index.html">Programy a Data</a></h1>
+  </header>
 
 
-<div class="row">
-  <div class="left" style="background-color:#bbb;">
-    <h2>Menu</h2>
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Vyhledej.." title="Type in a category">
-    <ul id="myMenu">
-      <li><a href="a/index.html">Programové a Datové soubory</a></li>
-      <li><a href="b/index.html">Operační systémy</a></li>
-      <li><a href="c/index.html">Softwarové licence</a></li>
-      <li><a href="d/index.html">Emulace a virtualizace</a></li>
-    </ul>
+  <div class="row">
+    <div class="left" style="background-color:#bbb;">
+      <h2>Menu</h2>
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Vyhledej.." title="Type in a category">
+      <ul id="myMenu">
+        <li><a href="a/index.html">Programové a Datové soubory</a></li>
+        <li><a href="b/index.html">Operační systémy</a></li>
+        <li><a href="c/index.html">Softwarové licence</a></li>
+        <li><a href="d/index.html">Emulace a virtualizace</a></li>
+        <li><a href="e/index.html">Ovladače, firmware a utility</a></li>
+
+      </ul>
+    </div>
+
+    <div class="right" style="background-color: bisque;">
+      <h1><a href="a/index.html">Vyuková prezentace</a></h1>
+
+      <img src="images/components-of-information-systems.jpg" alt="licence" width="900" height="350" class="center">
+    </div>
   </div>
-  
-  <div class="right" style="background-color: bisque;">
-    <h1><a href="a/index.html">Vyuková prezentace</a></h1>
-    
-      <img src="images/components-of-information-systems.jpg"  alt="licence" width="900" height="350" class="center">
-  </div>
-</div>
 
-<script>
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
     }
-  }
-}
-</script>
-<footer>
-  <hr />
-  <p>Autor: <i>Patrik Luks</i>&copy;</p>
-</footer>
+  </script>
+  <footer>
+    <hr />
+    <p>Autor: <i>Patrik Luks</i>&copy;</p>
+  </footer>
 </body>
+
 </html>
